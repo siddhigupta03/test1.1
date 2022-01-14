@@ -5,7 +5,7 @@ export default class Normal extends Component {
   render() {
       return(
           <View style={styles.con}>
-              <Text>
+              <Text style={styles.text}>
                The force that a solid surface exerts on any object in the normal direction is called the normal force.
               </Text>
               <Image style={styles.img} source={require('../assets/normal.jpeg')}></Image>
@@ -24,5 +24,9 @@ const styles = StyleSheet.create({
   img:{
     width: 70,
     height:70
+  },
+  text:{
+    textAlign: 'center',
+    margin:5,
   }
 });

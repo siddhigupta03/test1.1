@@ -5,7 +5,7 @@ export default class Friction extends Component {
   render() {
       return(
           <View style={styles.con}>
-              <Text>
+              <Text style={styles.text}>
               Friction is the resistance to the movement of a body over the surface of another.
               </Text>
               <Image style={styles.img} source={require('../assets/friction.jpeg')}></Image>
@@ -24,5 +24,9 @@ const styles = StyleSheet.create({
   img:{
     width: 70,
     height:70
+  },
+  text:{
+    textAlign: 'center',
+    margin:5,
   }
 });

@@ -5,7 +5,7 @@ export default class Tension extends Component {
   render() {
       return(
           <View style={styles.con}>
-              <Text>
+              <Text style={styles.text}>
                The force which always pulls the body along the string is called tension.
               </Text>
               <Image style={styles.img} source={require('../assets/tension.jpeg')}></Image>
@@ -24,5 +24,9 @@ const styles = StyleSheet.create({
   img:{
     width: 70,
     height:70
+  },
+  text:{
+    textAlign: 'center',
+    margin:5,
   }
 });

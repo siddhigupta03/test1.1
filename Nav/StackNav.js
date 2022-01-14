@@ -14,7 +14,7 @@ export default class extends Component {
             screenOptions={{headerShown:false}}>
 
             <Stack.Screen name='Introduction' component={Intro}/>
-            <Stack.Screen name='PostScreen' component={Types}/>
+            <Stack.Screen name='Types' component={Types}/>
 
             </Stack.Navigator>
         );

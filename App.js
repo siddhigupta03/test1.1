@@ -1,7 +1,10 @@
 import Stack from './Nav/StackNav'
+import { NavigationContainer } from 'react-navigation'
 
 export default function App() {
-  return (
-    <Stack/>
-  );
+  return(
+    <NavigationContainer>
+      <Stack/>
+    </NavigationContainer>
+  )
 }

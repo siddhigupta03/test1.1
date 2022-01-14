@@ -5,7 +5,7 @@ export default class Maascular extends Component {
   render() {
       return(
           <View style={styles.con}>
-              <Text>
+              <Text style={styles.text}>
                   The force which we exert by using our body muscles is known as muscular force.
               </Text>
               <Image style={styles.img} source={require('../assets/mascular.jpeg')}></Image>
@@ -24,5 +24,9 @@ const styles = StyleSheet.create({
   img:{
     width: 70,
     height:70
+  },
+  text:{
+    textAlign: 'center',
+    margin:5,
   }
 });
