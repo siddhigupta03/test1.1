@@ -6,12 +6,12 @@ export default class Friction extends Component {
       return(
           <View style={styles.con}>
               <Text style={styles.text}>
-              Friction is the resistance to the movement of a body over the surface of another.
+               Friction is the resistance to the movement of a body over the surface of another.
               </Text>
               <Image style={styles.img} source={require('../assets/friction.jpeg')}></Image>
           </View>
       )
-  }
+   }
 }
 
 const styles = StyleSheet.create({

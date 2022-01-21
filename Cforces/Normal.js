@@ -11,7 +11,7 @@ export default class Normal extends Component {
               <Image style={styles.img} source={require('../assets/normal.jpeg')}></Image>
           </View>
       )
-  }
+   }
 }
 
 const styles = StyleSheet.create({

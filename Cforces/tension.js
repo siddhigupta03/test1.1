@@ -11,7 +11,7 @@ export default class Tension extends Component {
               <Image style={styles.img} source={require('../assets/tension.jpeg')}></Image>
           </View>
       )
-  }
+   }
 }
 
 const styles = StyleSheet.create({

@@ -11,7 +11,7 @@ export default class Maascular extends Component {
               <Image style={styles.img} source={require('../assets/mascular.jpeg')}></Image>
           </View>
       )
-  }
+   }
 }
 
 const styles = StyleSheet.create({

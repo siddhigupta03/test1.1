@@ -3,8 +3,8 @@ import { StyleSheet, View, Text } from "react-native";
 import { Card } from 'react-native-paper';
 
 import Magnetic from '../NonCon/magnetic';
-import Electro from '../NonCon/magnetic';
-import Gravity from '../NonCon/magnetic';
+import Electro from '../NonCon/electrostatic';
+import Gravity from '../NonCon/gravity';
 
 export default class Intro extends Component {
     render() {

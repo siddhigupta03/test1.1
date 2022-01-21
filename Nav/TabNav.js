@@ -16,21 +16,18 @@ export default class TabNav extends Component {
         return(
             <Tab.Navigator
                 labeled={false}
-                barStyle={this.state.light_theme ? styles.bottomTabStyleL : styles.bottomTabStyle}
+                barStyle={styles.bottomTabStyleL}
                 screenOptions= {({route}) => ({
-                    tabBarIcon: ({focused, color, size}) =>{
-                        let iconName;
-                        if(route.name === 'Feed') {
-                            iconName = focused
-                            ? 'home'
-                            : 'home-outline'
-                        } else if(route.name === 'Create'){
-                            iconName= focused? "add-circle":"add-circle-outline"
+                    tabBarIcon: ({}) =>{
+                        if(route.name == 'Contact Force') {
+                            <Image source={require('../assets/cF.jpg')}></Image>
+                        } else if(route.name == 'Non Contact Force'){
+                            <Image source={require('../assets/ncF.jpg')}></Image>
+                        } else if(route.name == 'Net Force'){
+                            <Image source={require('../assets/net.png')}></Image>
+                        } else if(route.name == 'Pressure'){
+                            <Image source={require('../assets/pressureIcon.png')}></Image>
                         }
-                        return(
-                            <Ionicons name = {iconName} size={size} color={color}
-                            style={styles.icons}/>
-                        )
                     }
                 }) }
                     

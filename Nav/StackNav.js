@@ -12,10 +12,8 @@ export default class extends Component {
             <Stack.Navigator 
             initialRouteName='Introduction'
             screenOptions={{headerShown:false}}>
-
             <Stack.Screen name='Introduction' component={Intro}/>
             <Stack.Screen name='Types' component={Types}/>
-
             </Stack.Navigator>
         );
     }

@@ -5,19 +5,12 @@ export default class Electro extends Component {
   render() {
       return(
           <View style={styles.con}>
+              <Text style={styles.header}>Net Force</Text>
               <Text style={styles.text}>
-              The forces acting on the car are shownin the FBD (Free body diagram): 
+                The forces acting on the car are shownin the FBD (Free body diagram): 
               </Text>
-              <Text>
-                  They are:
-                    Force applied by the engine = F
-                    Friction applied by road = f
-                    Normal forces are N1 and N2
-                    Gravitational force (Fg) = W
-                    Net force along x-axis or direction
-                    Fnet, x = f - F
-                    Net force along y-axis or direction
-                    Fnet, y = N1+ N2- W
+              <Text style={styles.text2}>
+                  They are:\nForce applied by the engine=F,\nFriction applied by road=f\nNormal forces are N1 and N2\nGravitational force (Fg)=W\nNet force along x-axis or direction\nFnet, x=f-F\nNet force along y-axis or direction\nFnet, y = N1+ N2- W
               </Text>
               <Image style={styles.img} source={require('../assets/netForce.jpg')}></Image>
           </View>
@@ -43,5 +36,12 @@ const styles = StyleSheet.create({
   text2:{
     margin:5,
     fontSize:12,
-  }
+  },
+  header:{
+    backgroundColor:'red',
+    fontSize: 25,
+    margin: 15,
+    color:'#fff',
+    fontWeight: 'bold'
+  },
 });
